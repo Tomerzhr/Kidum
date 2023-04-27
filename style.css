@@ -1,0 +1,128 @@
+:root {
+
+    --clr-primary: #ffffff;
+    --clr-secondary: #F9F9F9;
+    --clr-dark: #2C2C2C;
+    --clr-blue: #0F5380;
+
+    --ff-primary: 'Assistant', sans-serif;
+    --fs-big: 4rem;
+    --fs-medium: 3rem;
+    --fs-small: 1rem;
+
+    --fw-bold: 800;
+    --fw-semibold: 500;
+    --fw-light: 200;
+}
+
+/* primary properties */
+* {
+    font-family: var(--ff-primary);
+}
+
+html,
+body,
+h1,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    background-image: url(img/Path.png);
+    background-position: center;
+    background-size: cover;
+    color: var(--clr-primary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+h1 {
+    font-size: var(--fs-big);
+    font-weight: var(--fw-bold);
+    line-height: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+form {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.formLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid var(--clr-blue);
+    background-color: var(--clr-secondary);
+    height: 40px;
+
+
+}
+
+input:focus {
+    outline: none !important;
+}
+
+label {
+    font-size: 0.8rem;
+    padding: 0.2rem 0;
+
+}
+
+.formBtn {
+    background-color: var(--clr-blue);
+    color: var(--clr-primary);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    border: none;
+    margin-top: 1.4rem;
+    padding: 0.7rem 2rem;
+    transition: background-color 0.4s;
+}
+
+.formBtn:hover {
+    background-color: #146ba5;
+}
+
+@media (max-width:450px) {
+    h1 {
+        font-size: var(--fs-medium);
+    }
+
+    p {
+        padding: 0 1rem;
+    }
+
+    form {
+        flex-direction: column;
+
+    }
+
+    .formLine {
+        min-width: 60%;
+    }
+
+    form {
+        padding: 2rem 0;
+    }
+
+    .hero {
+        max-height: 370px;
+    }
+}
