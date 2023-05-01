@@ -1,0 +1,91 @@
+* {
+  font-family: "Assistant", sans-serif;
+}
+
+html,
+body,
+h1,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  background-image: url(img/Path.png);
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+form .formLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+form input {
+  border: none;
+  border-bottom: 2px solid #0F5380;
+  background-color: #F9F9F9;
+  height: 40px;
+}
+form input:focus {
+  outline: none !important;
+}
+form label {
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+}
+form .formBtn {
+  background-color: #0F5380;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  border: none;
+  margin-top: 1.4rem;
+  padding: 0.7rem 2rem;
+  transition: background-color 0.4s;
+}
+form .formBtn:hover {
+  background-color: #146ba5;
+}
+
+@media (max-width: 450px) {
+  .hero {
+    min-height: 370px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    padding: 0 1rem;
+  }
+  form {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  form .formLine {
+    min-width: 60%;
+  }
+}/*# sourceMappingURL=main.css.map */
