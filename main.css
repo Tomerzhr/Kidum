@@ -42,9 +42,13 @@ form .formLine {
   justify-content: center;
   width: 20%;
 }
+form label {
+  font-weight: 700;
+  color: #083a5b;
+}
 form input {
   border: none;
-  border-bottom: 2px solid #0F5380;
+  border-bottom: 2px solid #083a5b;
   background-color: #F9F9F9;
   height: 40px;
 }
@@ -56,7 +60,7 @@ form label {
   padding: 0.2rem 0;
 }
 form .formBtn {
-  background-color: #0F5380;
+  background-color: #083a5b;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 800;
@@ -86,6 +90,13 @@ form .formBtn:hover {
     padding: 2rem 0;
   }
   form .formLine {
-    min-width: 60%;
+    width: 100%;
+    align-items: center;
+  }
+  form input {
+    width: 90%;
+  }
+  form button {
+    width: 90%;
   }
 }/*# sourceMappingURL=main.css.map */
