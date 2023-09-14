@@ -49,7 +49,7 @@ form label {
 form input {
   border: none;
   border-bottom: 2px solid #083a5b;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   height: 40px;
 }
 form input:focus {
@@ -73,6 +73,10 @@ form .formBtn {
 }
 form .formBtn:hover {
   background-color: #146ba5;
+}
+
+.formBtn:disabled {
+  opacity: 0.5;
 }
 
 .confirmation-message {
@@ -113,4 +117,4 @@ form .formBtn:hover {
   .hero {
     min-height: 700px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
