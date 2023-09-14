@@ -23,7 +23,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 550px;
 
     h1 {
         font-size: $fs-big;
@@ -95,7 +95,11 @@ form {
 
 }
 
-
+.confirmation-message{
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
 
 @media (max-width:450px) {
     .hero {
@@ -129,5 +133,13 @@ form {
             width: 90%;
         }
     }
-
+    .confirmation-message{
+        margin-top: 0;
+    }
 }
+
+@media (min-height:800px){
+    .hero{
+        min-height: 700px;
+    }
+} 

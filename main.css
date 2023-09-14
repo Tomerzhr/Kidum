@@ -20,7 +20,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 700px;
+  min-height: 550px;
 }
 .hero h1 {
   font-size: 4rem;
@@ -75,6 +75,12 @@ form .formBtn:hover {
   background-color: #146ba5;
 }
 
+.confirmation-message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 450px) {
   .hero {
     min-height: 370px;
@@ -98,5 +104,13 @@ form .formBtn:hover {
   }
   form button {
     width: 90%;
+  }
+  .confirmation-message {
+    margin-top: 0;
+  }
+}
+@media (min-height: 800px) {
+  .hero {
+    min-height: 700px;
   }
 }/*# sourceMappingURL=main.css.map */
